@@ -3,6 +3,16 @@
 An unofficial English fan translation patch for **Tengai Makyou III: Namida** (PlayStation 2, Hudson / Red Company,
 2005, SLPM-65952). It was never released in English, until now.
 
+![The English translation in game: title screen, opening movie, dialogue, battle, spells and menus](docs/preview.gif)
+
+[Watch the trailer](docs/trailer.mp4) (1 minute, no sound).
+
+| | | |
+|---|---|---|
+| ![Title screen](docs/title.png) | ![Opening movie with English subtitles](docs/opening.png) | ![Dialogue in Takachiho Village](docs/dialogue.png) |
+| ![Battle commands](docs/battle.png) | ![Spell list](docs/spells.png) | ![Spell sigil in English](docs/sigil.png) |
+| ![Battle results](docs/results.png) | ![Field menu](docs/menu.png) | ![Village title card](docs/village.png) |
+
 **Found a bug?** [Open an issue](../../issues): untranslated text, typos, overflowing text, crashes. Say where you
 were and what was on screen; a savestate helps most.
 
