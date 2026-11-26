@@ -1,0 +1,25 @@
+# Warp to 迷いの森 (Lost Forest, region 0x0f3), New Game, walk around until an encounter (debug build).
+wait 20
+repeat 9 press start gap 5
+wait 3
+warp 0x0f3
+press circle
+wait 15
+shot arrive
+press up 4
+press left 4
+press down 4
+press right 4
+press up 4
+press left 4
+press down 4
+press right 4
+press up 4
+press down 4
+press left 4
+press right 4
+press up 4
+press down 4
+wait 4
+shot after
+save 3

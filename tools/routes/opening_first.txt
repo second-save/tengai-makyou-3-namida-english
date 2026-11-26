@@ -1,0 +1,12 @@
+# First opening line (ev0100:0) after New Game with the movie skipped: for --qa display tests. Debug build; ~1.5 min.
+wait 20
+repeat 9 press start gap 5
+wait 3
+poke16 0x765de4 1
+press circle 0.4
+wait 2
+press circle 0.4
+wait 10
+every 2
+wait 16
+every 0

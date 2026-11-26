@@ -1,0 +1,15 @@
+# Name entry (window 0xf 1): savestate 8 on the first page, 9 after R1 (memory diff of the w_sy05 work, sy05w @0x791f24).
+wait 20
+repeat 9 press start gap 5
+wait 3
+warp 0x1f1
+press circle
+wait 15
+window 0xf 1
+wait 8
+shot p0
+save 8
+press r1
+wait 2
+shot p1
+save 9

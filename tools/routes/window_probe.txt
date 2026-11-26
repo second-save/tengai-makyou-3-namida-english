@@ -1,0 +1,36 @@
+# Open DLL screens via `window KIND ARG` from the town street (debug build). Shots: w<kind>_*.
+wait 20
+repeat 9 press start gap 5
+wait 3
+warp 0x1f1
+press circle
+wait 15
+shot field
+save 5
+# item shop (w_sh01), shop 1
+window 0 1
+wait 6
+shot w0_a
+press circle
+wait 2
+shot w0_b
+repeat 4 press cross gap 2
+wait 3
+shot w0_exit
+# save screen (w_sy02)
+window 0xe 0
+wait 6
+shot we_a
+press circle
+wait 3
+shot we_b
+repeat 4 press cross gap 2
+wait 3
+shot we_exit
+# map (w_mp01)
+window 0x14 0
+wait 6
+shot w14_a
+repeat 4 press cross gap 2
+wait 3
+shot w14_exit

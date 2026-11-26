@@ -1,0 +1,16 @@
+# Quiz prompt + choices from slot 5.
+wait 8
+load 5
+wait 2
+window 0x10 0
+wait 5
+press circle
+wait 3
+shot p1
+wait 4
+shot p2
+wait 6
+shot p3
+press circle
+wait 3
+shot p4

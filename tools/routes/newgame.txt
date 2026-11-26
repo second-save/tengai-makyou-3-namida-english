@@ -1,0 +1,9 @@
+# Cold boot -> New Game -> opening narration and first dialogue (debug build; ~5 min). Saves slot 1.
+wait 20
+repeat 9 press start gap 5
+wait 3
+press circle
+wait 4
+repeat 80 press circle gap 3
+shot end
+save 1

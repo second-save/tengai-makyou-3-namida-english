@@ -1,0 +1,27 @@
+# Graphics check: town arrival title card (shot every second), then the field menu and its pages. Debug build.
+wait 20
+repeat 9 press start gap 5
+wait 3
+warp 0x1f1
+press circle
+every 1
+wait 14
+every 0
+press triangle
+wait 2
+shot menu
+press circle
+wait 2
+shot menu_items
+press cross
+wait 1
+press down
+press circle
+wait 2
+shot menu_2
+press cross
+wait 1
+repeat 4 press down gap 0.5
+press circle
+wait 2
+shot menu_status

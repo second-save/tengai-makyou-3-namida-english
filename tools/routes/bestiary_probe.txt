@@ -1,0 +1,31 @@
+# Find how the bestiary opens an entry's text, from slot 8 (bestiary.txt, after the forest battle).
+wait 8
+load 8
+wait 2
+window 8 0
+wait 5
+press right
+wait 1
+press circle
+wait 3
+press circle
+wait 3
+shot c
+press r1
+wait 2
+shot r1
+press l1
+wait 2
+shot l1
+press right
+wait 2
+shot right
+press select
+wait 2
+shot select
+press start
+wait 2
+shot start
+press triangle
+wait 2
+shot tri

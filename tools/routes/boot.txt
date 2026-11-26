@@ -1,0 +1,11 @@
+# cold boot to the title menu, then New Game
+wait 25
+shot logos
+repeat 6 press start gap 1.5
+wait 3
+shot title
+repeat 4 press circle gap 1.5
+wait 4
+shot after_title
+repeat 10 press circle gap 1.2
+shot intro

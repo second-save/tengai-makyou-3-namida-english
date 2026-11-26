@@ -1,0 +1,22 @@
+# From slot 2 (warp_test.txt: town street), try the menu buttons (debug build).
+wait 8
+load 2
+wait 3
+shot start
+press triangle
+wait 3
+shot tri
+press triangle
+wait 2
+press cross
+wait 2
+press start
+wait 3
+shot st
+press start
+wait 2
+press cross
+wait 2
+press square
+wait 3
+shot sq

@@ -1,0 +1,20 @@
+# Quiz window (w_ms02, window 0x10) from a cold boot: prompt, question, answer list. Debug build; ~2.5 min.
+wait 20
+repeat 9 press start gap 5
+wait 3
+shot title
+warp 0x1f1
+press circle
+wait 15
+shot field
+window 0x10 0
+wait 6
+shot q_a
+press circle
+wait 2
+shot q_b
+press circle
+wait 2
+shot q_c
+wait 2
+shot q_d

@@ -1,0 +1,14 @@
+# Width rulers in the opening (ev0100 narration + first dialogue): cold boot, New Game with the opening movie
+# skipped (debugpatch SKIP, no warp), then advance the event (~2.5 min).
+# Build: build.py --marker --debug --qa-file tools/debug/width1.tsv --qa-file tools/debug/width2.tsv
+wait 20
+repeat 9 press start gap 5
+wait 3
+poke16 0x765de4 1
+# a press can be lost while a --shot-every savestate is written: press twice (the title idles into the
+# attract movie otherwise)
+press circle 0.4
+wait 2
+press circle 0.4
+wait 10
+repeat 30 press circle gap 4

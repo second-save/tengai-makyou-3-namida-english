@@ -1,0 +1,20 @@
+# JP reference shots: map, field menu (cold boot, town street).
+wait 20
+repeat 9 press start gap 5
+wait 3
+warp 0x1f1
+press circle
+wait 15
+repeat 6 press circle gap 3
+wait 3
+window 20 0
+wait 6
+shot map
+press square
+wait 2
+shot map2
+repeat 3 press cross gap 2
+wait 3
+press triangle
+wait 3
+shot menu

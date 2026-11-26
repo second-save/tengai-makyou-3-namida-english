@@ -1,0 +1,295 @@
+# Ruler tour of the DLL screens (build with --ruler, see docs/windows.md). Cold boot, town street, slot 6.
+wait 20
+repeat 9 press start gap 5
+wait 3
+warp 0x1f1
+press circle
+wait 15
+repeat 6 press circle gap 3
+wait 3
+call PartyMoneyAdd 50000
+call PartyItemAdd 1 2
+call PartyItemAdd 2 2
+call PartyItemAdd 3 2
+call PartyItemAdd 4 2
+call PartyItemAdd 5 2
+call PartyItemAdd 6 2
+call PartyItemAdd 7 2
+call PartyItemAdd 8 2
+call PartyItemAdd 9 2
+call PartyItemAdd 10 2
+call PartyItemAdd 11 2
+call PartyItemAdd 12 2
+wait 2
+save 6
+press triangle
+wait 3
+shot menu
+press cross
+wait 2
+load 6
+wait 2
+window 0 1
+wait 6
+shot k0_a
+press circle
+wait 3
+shot k0_b
+press circle
+wait 3
+shot k0_c
+press square
+wait 3
+shot k0_d
+load 6
+wait 2
+window 1 1
+wait 6
+shot k1_a
+press circle
+wait 3
+shot k1_b
+press circle
+wait 3
+shot k1_c
+press square
+wait 3
+shot k1_d
+load 6
+wait 2
+window 2 1
+wait 6
+shot k2_a
+press circle
+wait 3
+shot k2_b
+press circle
+wait 3
+shot k2_c
+press square
+wait 3
+shot k2_d
+load 6
+wait 2
+window 3 1
+wait 6
+shot k3_a
+press circle
+wait 3
+shot k3_b
+press circle
+wait 3
+shot k3_c
+press square
+wait 3
+shot k3_d
+load 6
+wait 2
+window 4 1
+wait 6
+shot k4_a
+press circle
+wait 3
+shot k4_b
+press circle
+wait 3
+shot k4_c
+press square
+wait 3
+shot k4_d
+load 6
+wait 2
+window 5 1
+wait 6
+shot k5_a
+press circle
+wait 3
+shot k5_b
+press circle
+wait 3
+shot k5_c
+press square
+wait 3
+shot k5_d
+load 6
+wait 2
+window 6 1
+wait 6
+shot k6_a
+press circle
+wait 3
+shot k6_b
+press circle
+wait 3
+shot k6_c
+press square
+wait 3
+shot k6_d
+load 6
+wait 2
+window 7 1
+wait 6
+shot k7_a
+press circle
+wait 3
+shot k7_b
+press circle
+wait 3
+shot k7_c
+press square
+wait 3
+shot k7_d
+load 6
+wait 2
+window 8 1
+wait 6
+shot k8_a
+press circle
+wait 3
+shot k8_b
+press circle
+wait 3
+shot k8_c
+press square
+wait 3
+shot k8_d
+load 6
+wait 2
+window 9 1
+wait 6
+shot k9_a
+press circle
+wait 3
+shot k9_b
+press circle
+wait 3
+shot k9_c
+press square
+wait 3
+shot k9_d
+load 6
+wait 2
+window 10 1
+wait 6
+shot k10_a
+press circle
+wait 3
+shot k10_b
+press circle
+wait 3
+shot k10_c
+press square
+wait 3
+shot k10_d
+load 6
+wait 2
+window 11 1
+wait 6
+shot k11_a
+press circle
+wait 3
+shot k11_b
+press circle
+wait 3
+shot k11_c
+press square
+wait 3
+shot k11_d
+load 6
+wait 2
+window 12 1
+wait 6
+shot k12_a
+press circle
+wait 3
+shot k12_b
+press circle
+wait 3
+shot k12_c
+press square
+wait 3
+shot k12_d
+load 6
+wait 2
+window 13 1
+wait 6
+shot k13_a
+press circle
+wait 3
+shot k13_b
+press circle
+wait 3
+shot k13_c
+press square
+wait 3
+shot k13_d
+load 6
+wait 2
+window 14 1
+wait 6
+shot k14_a
+press circle
+wait 3
+shot k14_b
+press circle
+wait 3
+shot k14_c
+press square
+wait 3
+shot k14_d
+load 6
+wait 2
+window 17 1
+wait 6
+shot k17_a
+press circle
+wait 3
+shot k17_b
+press circle
+wait 3
+shot k17_c
+press square
+wait 3
+shot k17_d
+load 6
+wait 2
+window 18 1
+wait 6
+shot k18_a
+press circle
+wait 3
+shot k18_b
+press circle
+wait 3
+shot k18_c
+press square
+wait 3
+shot k18_d
+load 6
+wait 2
+window 19 1
+wait 6
+shot k19_a
+press circle
+wait 3
+shot k19_b
+press circle
+wait 3
+shot k19_c
+press square
+wait 3
+shot k19_d
+load 6
+wait 2
+window 20 1
+wait 6
+shot k20_a
+press circle
+wait 3
+shot k20_b
+press circle
+wait 3
+shot k20_c
+press square
+wait 3
+shot k20_d

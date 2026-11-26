@@ -1,0 +1,92 @@
+# Party setup for list screens (debug build): cold boot, warp to the Lost Forest (its formation 0 is beatable at
+# level 1; the town's kills Namida), give items 1-30, techniques 0-9 and money via `call`, save slot 7.
+# Then the items and skills screens.
+wait 20
+repeat 9 press start gap 5
+wait 3
+warp 0x0f3
+press circle
+wait 15
+repeat 6 press circle gap 3
+wait 3
+call PartyMoneyAdd 50000
+call PartyItemAdd 1 3
+call PartyItemAdd 2 3
+call PartyItemAdd 3 3
+call PartyItemAdd 4 3
+call PartyItemAdd 5 3
+call PartyItemAdd 6 3
+call PartyItemAdd 7 3
+call PartyItemAdd 8 3
+call PartyItemAdd 9 3
+call PartyItemAdd 10 3
+call PartyItemAdd 11 3
+call PartyItemAdd 12 3
+call PartyItemAdd 13 3
+call PartyItemAdd 14 3
+call PartyItemAdd 15 3
+call PartyItemAdd 16 3
+call PartyItemAdd 17 3
+call PartyItemAdd 18 3
+call PartyItemAdd 19 3
+call PartyItemAdd 20 3
+call PartyItemAdd 21 3
+call PartyItemAdd 22 3
+call PartyItemAdd 23 3
+call PartyItemAdd 24 3
+call PartyItemAdd 25 3
+call PartyItemAdd 26 3
+call PartyItemAdd 27 3
+call PartyItemAdd 28 3
+call PartyItemAdd 29 3
+call PartyItemAdd 30 3
+call PlayerTechniqueLearnSet 0 0
+call PlayerTechniqueLearnSet 0 1
+call PlayerTechniqueLearnSet 0 2
+call PlayerTechniqueLearnSet 0 3
+call PlayerTechniqueLearnSet 0 4
+call PlayerTechniqueLearnSet 0 5
+call PlayerTechniqueLearnSet 0 6
+call PlayerTechniqueLearnSet 0 7
+call PlayerTechniqueLearnSet 0 8
+call PlayerTechniqueLearnSet 0 9
+# master them (proficiency clamps to the master value), plus the two Namida starts with (5, 0x66)
+call PlayerSkillTechniqueAdd 0 0 999
+call PlayerSkillTechniqueAdd 0 1 999
+call PlayerSkillTechniqueAdd 0 2 999
+call PlayerSkillTechniqueAdd 0 3 999
+call PlayerSkillTechniqueAdd 0 4 999
+call PlayerSkillTechniqueAdd 0 5 999
+call PlayerSkillTechniqueAdd 0 6 999
+call PlayerSkillTechniqueAdd 0 7 999
+call PlayerSkillTechniqueAdd 0 8 999
+call PlayerSkillTechniqueAdd 0 9 999
+call PlayerSkillTechniqueAdd 0 0x66 999
+# experience (徳) for rank (段): equip lists stay empty at 1段
+call PlayerExpAdd 0 50000
+wait 2
+save 7
+press triangle
+wait 3
+press circle
+wait 3
+shot items1
+press circle
+wait 2
+shot items2
+press cross
+wait 1
+press cross
+wait 2
+press down
+wait 1
+press down
+wait 1
+press circle
+wait 3
+press circle
+wait 2
+shot skill1
+press circle
+wait 2
+shot skill2

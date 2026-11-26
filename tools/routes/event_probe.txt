@@ -1,0 +1,28 @@
+# Start event-script methods in the town street (0x1f1, module mnng_p) from slot 5 (window_probe.txt, same build).
+wait 8
+load 5
+wait 2
+event nn2200 イベント
+wait 4
+shot nn2200_a
+press circle
+wait 2
+shot nn2200_b
+load 5
+wait 2
+event nn2201 初期化
+wait 1
+event nn2201 イベント
+wait 4
+shot nn2201_a
+press circle
+wait 2
+shot nn2201_b
+load 5
+wait 2
+event ev1005_闇賭博 説明
+wait 4
+shot dark_a
+press circle
+wait 2
+shot dark_b

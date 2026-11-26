@@ -1,0 +1,10 @@
+# Glyph torture line (tools/debug/torture.tsv) in the quiz window, from slot 5 (window_probe.txt; same ELF).
+wait 8
+load 5
+wait 2
+window 0x10 0
+wait 6
+shot t1
+press circle
+wait 3
+shot t2

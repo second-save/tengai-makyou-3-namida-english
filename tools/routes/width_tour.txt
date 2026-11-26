@@ -1,0 +1,43 @@
+# Width tour on a `build.py --qa-file tools/debug/width1.tsv` build: cold boot, warp to the town street, slot 6.
+# (Overriding a relocated file such as itemd patches the ELF, so older savestates don't load.)
+wait 20
+repeat 9 press start gap 5
+wait 3
+warp 0x1f1
+press circle
+wait 15
+# a villager (ev0500, random line 0-7) may stop Namida on arrival: shoot it, then clear it
+shot villager
+repeat 6 press circle gap 3
+wait 3
+save 6
+load 6
+wait 2
+window 0x10 0
+wait 5
+shot quiz1
+press circle
+wait 3
+shot quiz2
+press circle
+wait 3
+shot quiz3
+load 6
+wait 2
+window 0 1
+wait 6
+shot shop1
+press circle
+wait 2
+shot shop2
+press down
+wait 1
+shot shop3
+load 6
+wait 2
+press triangle
+wait 3
+shot menu1
+press circle
+wait 3
+shot menu2

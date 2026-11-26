@@ -1,0 +1,6 @@
+# Glyph torture line (build.py --qa-file; route width_opening.txt): every printable ASCII glyph (codes 0x00-0x5E)
+# plus double spaces, as narration (ev0100:0) and dialogue (ev0100:9). {lb}/{rb} are the braces.
+# (Not in the quiz window: wms02mes is 1970 of its 2048 bytes in the marker build, see docs/windows.md.)
+ev0100:0	!"#$%&'()*+,-./0123456789:;<=>?@\nABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_ {lb}|{rb}~
+ev0100:1	abcdefghijklmnopqrstuvwxyz\nTwo  spaces,  "quotes"  and  Namida's  sword.
+ev0100:9	{name}Namida{name}!"#$%&'()*+,-./0123456789:;<=>?@\nABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_ {lb}|{rb}~\nabcdefghijklmnopqrstuvwxyz\nTwo  spaces,  "quotes"  and  Namida's  sword.

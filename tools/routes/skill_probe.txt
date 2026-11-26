@@ -1,0 +1,37 @@
+# 技能 → 装備: try each button on the first slot, from slot 9 (width_battle.txt, after the rank-up).
+wait 8
+load 9
+wait 2
+press triangle
+wait 3
+shot menu
+repeat 4 press up gap 1
+shot menu2
+press circle
+wait 3
+press circle
+wait 2
+press circle
+wait 2
+shot a_circle
+press right
+wait 2
+shot b_right
+press circle
+wait 2
+shot c_circle
+press up
+wait 2
+shot d_up
+press left
+wait 2
+shot e_left
+press triangle
+wait 2
+shot f_tri
+press l1
+wait 2
+shot g_l1
+press r1
+wait 2
+shot h_r1

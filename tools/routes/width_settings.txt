@@ -1,0 +1,13 @@
+# Settings screen rulers from slot 7 (same build as width_btltext.txt).
+wait 8
+load 7
+wait 2
+press triangle
+wait 3
+repeat 6 press down gap 1
+press circle
+wait 3
+shot set1
+press down
+wait 2
+shot set2

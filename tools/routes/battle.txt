@@ -1,0 +1,19 @@
+# Forced battle: cold boot, warp to the Lost Forest (0x0f3), New Game, force formation 0 (debug build; ~3 min).
+wait 20
+repeat 9 press start gap 5
+wait 3
+warp 0x0f3
+press circle
+wait 15
+shot field
+battle 0
+wait 6
+shot enter
+wait 10
+shot battle
+save 4
+wait 10
+shot battle2
+press circle
+wait 3
+shot cmd

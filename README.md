@@ -56,6 +56,42 @@ The game uses a new variable-width font (PT Serif). Japanese name readings over 
 - A few signs painted on town buildings are still in Japanese.
 - Some short labels use abbreviations to fit small boxes.
 
+## Tools (for modders and other languages)
+
+The Python tools that made this patch are in [`tools/`](tools), with the build script `build.py`, the tests and the
+reverse-engineering notes in [`docs/re/`](docs/re) (disc, AFS archives, CMP compression, message format, font, ELF
+and DLL patches). This repository does not contain the game, files unpacked from it, or the translation data the
+build reads (`script/`, `gfx/labels_*.json`, `subs/`): those hold the game's Japanese text.
+
+| Tool | Purpose |
+|---|---|
+| `tools/unpack.py`, `iso.py`, `afs.py`, `cmp.py` | Unpack the DVD image, AFS archives and CMP containers; patch files in place |
+| `tools/mes.py`, `script.py` | Decode message files; extract every string to `script/*.json` and rebuild them |
+| `tools/font.py`, `vwf.py` | The dialogue font and the variable-width English font |
+| `tools/elfpatch.py`, `dllpatch.py`, `snrel.py` | Code patches to the executable and the DLL screens (VWF, layouts, sizes) |
+| `tools/ofs_tables.py`, `ofs_patch.py`, `evembed.py` | String-offset tables compiled into the code, and messages embedded in maps |
+| `tools/txd.py`, `gfx.py`, `gfxdump.py`, `rwgeo.py` | RenderWare textures: dump, survey, redraw text graphics and re-insert |
+| `tools/opening.py`, `asr.py` | Captions for the opening and the castle title-card movies |
+| `tools/boxes.py`, `batches.py`, `jpleft.py` | Text-width checks per window, translation batches, leftover-Japanese scan |
+| `tools/pcsx2.py`, `debugpatch.py`, `routes/` | Scripted emulator testing (PCSX2 + PINE) with a debug build |
+| `tools/release.py` | Build, test and package the xdelta patch |
+
+To start a translation into another language from your own dump (`Tengai Makyou III - Namida (Japan).iso`, SHA-1
+in `rom.sha1`):
+
+```sh
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+mkdir rom && ln -s "/path/to/Tengai Makyou III - Namida (Japan).iso" rom/namida.iso
+.venv/bin/python -X utf8 tools/unpack.py                              # -> work/
+.venv/bin/python -X utf8 tools/script.py extract work/mes script      # -> script/*.json: {"id", "jp", "en"}
+# fill in "en" (empty = keep the Japanese), then:
+.venv/bin/python -X utf8 build.py                                     # -> build/namida_en.iso
+```
+
+The English font redraws the game's ASCII glyphs only: accented letters need new glyphs in `tools/vwf.py`. Text
+graphics, the opening captions and the movie title cards each read their own data files (see `tools/gfx.py` and
+`tools/opening.py`); `build.py` expects them to exist.
+
 ## Credits
 
 Translation and engine work: Second Save. English font: PT Serif by ParaType (SIL Open Font License 1.1, see

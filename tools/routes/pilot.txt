@@ -1,0 +1,13 @@
+# Pilot translation (b001): cold boot, New Game with the opening movie skipped (as width_opening.txt), then a shot
+# every 2 s through the ev0100 narration and first dialogue (~3 min, debug build).
+wait 20
+repeat 9 press start gap 5
+wait 3
+poke16 0x765de4 1
+press circle 0.4
+wait 2
+press circle 0.4
+wait 10
+every 2
+repeat 30 press circle gap 4
+shot end

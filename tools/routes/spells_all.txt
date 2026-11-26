@@ -1,0 +1,76 @@
+# Memory-card save for checking spell sigils (D25): Namida knows every player spell (0-41), 15 equipped (0-14),
+# high rank, healed; saved to card slot 1, file 01, in the Lost Forest (random battles). Debug build, cold boot.
+wait 20
+repeat 9 press start gap 5
+wait 3
+warp 0x0f3
+press circle
+wait 15
+repeat 6 press circle gap 3
+wait 3
+call PlayerExpAdd 0 500000
+call PlayerMagicLearnSet 0 0
+call PlayerMagicLearnSet 0 1
+call PlayerMagicLearnSet 0 2
+call PlayerMagicLearnSet 0 3
+call PlayerMagicLearnSet 0 4
+call PlayerMagicLearnSet 0 5
+call PlayerMagicLearnSet 0 6
+call PlayerMagicLearnSet 0 7
+call PlayerMagicLearnSet 0 8
+call PlayerMagicLearnSet 0 9
+call PlayerMagicLearnSet 0 10
+call PlayerMagicLearnSet 0 11
+call PlayerMagicLearnSet 0 12
+call PlayerMagicLearnSet 0 13
+call PlayerMagicLearnSet 0 14
+call PlayerMagicLearnSet 0 15
+call PlayerMagicLearnSet 0 16
+call PlayerMagicLearnSet 0 17
+call PlayerMagicLearnSet 0 18
+call PlayerMagicLearnSet 0 19
+call PlayerMagicLearnSet 0 20
+call PlayerMagicLearnSet 0 21
+call PlayerMagicLearnSet 0 22
+call PlayerMagicLearnSet 0 23
+call PlayerMagicLearnSet 0 24
+call PlayerMagicLearnSet 0 25
+call PlayerMagicLearnSet 0 26
+call PlayerMagicLearnSet 0 27
+call PlayerMagicLearnSet 0 28
+call PlayerMagicLearnSet 0 29
+call PlayerMagicLearnSet 0 30
+call PlayerMagicLearnSet 0 31
+call PlayerMagicLearnSet 0 32
+call PlayerMagicLearnSet 0 33
+call PlayerMagicLearnSet 0 34
+call PlayerMagicLearnSet 0 35
+call PlayerMagicLearnSet 0 36
+call PlayerMagicLearnSet 0 37
+call PlayerMagicLearnSet 0 38
+call PlayerMagicLearnSet 0 39
+call PlayerMagicLearnSet 0 40
+call PlayerMagicLearnSet 0 41
+call PlayerEquipSet 0 10 0
+call PlayerEquipSet 0 11 1
+call PlayerEquipSet 0 12 2
+call PlayerEquipSet 0 13 3
+call PlayerEquipSet 0 14 4
+call PlayerEquipSet 0 15 5
+call PlayerEquipSet 0 16 6
+call PlayerEquipSet 0 17 7
+call PlayerEquipSet 0 18 8
+call PlayerEquipSet 0 19 9
+call PlayerEquipSet 0 20 10
+call PlayerEquipSet 0 21 11
+call PlayerEquipSet 0 22 12
+call PlayerEquipSet 0 23 13
+call PlayerEquipSet 0 24 14
+call PartyStayHealing
+wait 2
+save 6
+# No memory-card save: in this PCSX2 setup the game hangs on "Saving..." (JP build too, 2026-11-24; `window 0xe`
+# reaches create/format/save, `call SystemFlagSet 2` doesn't enable the menu's Save). Use savestate 6.
+press triangle
+wait 3
+shot menu

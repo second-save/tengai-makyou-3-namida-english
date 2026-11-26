@@ -1,0 +1,13 @@
+# Save confirm dialog rulers (tools/debug/width3.tsv) from slot 5.
+wait 8
+load 5
+wait 2
+window 0xe 0
+wait 6
+shot s1
+press circle
+wait 3
+shot s2
+press right
+wait 1
+shot s3

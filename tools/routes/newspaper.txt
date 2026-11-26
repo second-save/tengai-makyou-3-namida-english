@@ -1,0 +1,45 @@
+# Newspaper (w_ki01, window 7) from the town street, with articles 0, 1, 60, 61, 90, 91 released by poking the
+# party's news list (byte array at 0x795fb2, 0xFF-terminated; PartyNewsNumGet). Debug build; cold boot ~2 min.
+wait 20
+repeat 9 press start gap 5
+wait 3
+shot title
+warp 0x1f1
+press circle
+wait 15
+shot field
+poke16 0x795fb2 0x0100
+poke16 0x795fb4 0x3d3c
+poke16 0x795fb6 0x5b5a
+poke16 0x795fb8 0xffff
+window 7 1
+wait 8
+shot k7_list
+press circle
+wait 3
+shot k7_open
+press circle
+wait 3
+shot k7_art1
+press circle
+wait 3
+shot k7_art1b
+press cross
+wait 2
+press down
+wait 1
+press circle
+wait 3
+shot k7_art2
+press circle
+wait 3
+shot k7_art2b
+press cross
+wait 2
+repeat 3 press down gap 1
+press circle
+wait 3
+shot k7_art3
+press circle
+wait 3
+shot k7_art3b

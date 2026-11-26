@@ -1,0 +1,8 @@
+# Quiz window choice list (wms02:1 {choice} + answers), shots every second (--shot-every 1). From slot 7.
+wait 8
+load 7
+wait 2
+window 0x10 0
+wait 5
+press circle
+wait 12

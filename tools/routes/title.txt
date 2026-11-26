@@ -1,0 +1,5 @@
+# Cold boot to the title menu (debug build needed for presses). ~75 s.
+wait 20
+repeat 9 press start gap 5
+wait 3
+shot title_menu

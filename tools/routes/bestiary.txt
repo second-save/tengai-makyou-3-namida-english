@@ -1,0 +1,29 @@
+# Win the Lost Forest formation 0 by attacking, then open the bestiary (魔物図鑑, window 8). From slot 7.
+wait 8
+load 7
+wait 2
+battle 0
+wait 18
+repeat 25 press circle gap 2
+shot after_battle
+repeat 6 press circle gap 2
+wait 3
+shot field
+save 8
+window 8 0
+wait 5
+shot b1
+press right
+wait 1
+press circle
+wait 3
+shot b2
+press circle
+wait 3
+shot b3
+press circle
+wait 3
+shot b4
+press square
+wait 3
+shot b5

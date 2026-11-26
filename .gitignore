@@ -1,0 +1,13 @@
+# game data and translation data are never committed here
+rom/
+build/
+work/
+release/
+script/
+subs/
+gfx/*.json
+tools/debug/regions.tsv
+*.iso
+.venv/
+__pycache__/
+.DS_Store

@@ -1,0 +1,7 @@
+# Watch a whole forest battle (run with --shot-every 1): attack until it ends. From slot 7.
+wait 8
+load 7
+wait 2
+battle 0
+wait 18
+repeat 12 press circle gap 2
